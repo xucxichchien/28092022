@@ -4,7 +4,7 @@ const fs = require("fs");
 
 //-------------------------------------------
 router.get( "/" , (yeucau, trave) => {
-    data = fs.readFileSync("./html/login.html");
+    data = fs.readFileSync("./view/login.html");
     pageContent = data.toString();
     trave.send(pageContent);
 });
